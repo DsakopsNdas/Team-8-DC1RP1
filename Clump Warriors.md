@@ -1,4 +1,10 @@
 *Game Design Document*
+##### Revisions & Updates List
+Clump Warriors GDD V.1 - September 19, 2026 - Jameson Phong
+- Creation of the GDD
+
+Clump Warriors GDD V.2 - September 21, 2026 - Jameson Phong
+- Revised Gameplay
 ### Table of Contents
 1. Introduction
 	1. Project Vision
@@ -21,7 +27,7 @@ The goal of Clump Warriors is to answer our objective question: How satisfying d
 Clump Warriors is a Third-Person Action-Adventure Hack-and-Slash game.
 ### Game Mechanics
 -=- *Gameplay* -=-
-Players will spawn in a procedurally generated level and will fight through hordes of enemies, collecting the bodies of slain enemies onto their weapon and surviving for as long as they can before they themself are defeated by an enemy.
+Players will spawn in a procedurally generated level and will fight through hordes of enemies, collecting the bodies of slain enemies onto their weapon. ~~,collecting the bodies of slain enemies onto their weapon and surviving for as long as they can before they themself are defeated by an enemy.~~ Each level will have a large amount of enemies that the Player must fight through in order to win.
 
 -=- *Controls* -=-
 Players will use the WASD Keys on a Keyboard in order to move forward, backward, left and right, and use the Left Mouse Click Button on a Mouse in order to swing their sword.

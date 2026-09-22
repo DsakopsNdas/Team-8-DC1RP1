@@ -2,20 +2,24 @@ using UnityEngine;
 
 public class EnemyMove : MonoBehaviour
 {
-    public Transform targettedPlayer = null;
+    public Transform targetTransform = null;
+    public Vector3 targetLookPos = Vector3.zero;
     public float enemyMoveSpeed = 5f;
-    // Start is called before the first frame update
-    void Start()
-    {
-        transform.parent.gameObject.GetComponent<GroupDetectionTarget>().target = targettedPlayer;
-    }
+    public float enemyTurnSpeed = 0.1f;
 
     // Update is called once per frame
     void Update()
     {
-        if (targettedPlayer != null)
+        if (transform.parent.gameObject.GetComponent<GroupDetectionTarget>().targeted == true)
         {
-            transform.position = Vector3.MoveTowards(transform.position, targettedPlayer.position, enemyMoveSpeed * Time.deltaTime);
+            targetTransform = transform.parent.gameObject.GetComponent<GroupDetectionTarget>().target;
+        }
+        
+        if (targetTransform != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, enemyMoveSpeed * Time.deltaTime);
+            targetLookPos = Vector3.Lerp(transform.position, targetTransform.position, enemyTurnSpeed * Time.deltaTime);
+            transform.LookAt(targetLookPos);
         }
     }
 }

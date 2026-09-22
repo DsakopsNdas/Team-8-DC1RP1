@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9099401928997326842}
   - component: {fileID: 2739860024525904005}
   m_Layer: 0
-  m_Name: Enemy Group
+  m_Name: Goblin Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,16 +31,16 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8154193593217972265}
-  - {fileID: 467018130070132646}
-  - {fileID: 2487801219097723460}
-  - {fileID: 1401189910629088960}
-  - {fileID: 6697459296756008451}
-  - {fileID: 5097241855582005653}
-  - {fileID: 7658441372216400604}
-  - {fileID: 405466574544890369}
-  - {fileID: 2047571119970126956}
-  - {fileID: 8429169099930180365}
+  - {fileID: 2716446490406783519}
+  - {fileID: 6725596289901341612}
+  - {fileID: 3328191139536140108}
+  - {fileID: 7642763458853832616}
+  - {fileID: 8850455502715057840}
+  - {fileID: 170770976221649338}
+  - {fileID: 1440420942572281052}
+  - {fileID: 8773856782625716635}
+  - {fileID: 4706102740643602841}
+  - {fileID: 7660899468418974744}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &9099401928997326842
@@ -77,7 +77,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
---- !u!1001 &1314880490119484940
+  targeted: 0
+--- !u!1001 &1516542511818923607
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -87,19 +88,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (2)
+      value: Goblin
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.4637527
+      value: 2.52
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.356258
+      value: 0.78
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -134,12 +135,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &2487801219097723460 stripped
+--- !u!4 &2716446490406783519 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 1314880490119484940}
+  m_PrefabInstance: {fileID: 1516542511818923607}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &2579172929184672392
+--- !u!1001 &2200301870790222596
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -149,19 +150,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (3)
+      value: Goblin (2)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.43
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.83
+      value: 7.15
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -169,15 +170,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -196,12 +197,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &1401189910629088960 stripped
+--- !u!4 &3328191139536140108 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 2579172929184672392}
+  m_PrefabInstance: {fileID: 2200301870790222596}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3230059241508722724
+--- !u!1001 &2541281325734594708
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -211,19 +212,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (8)
+      value: Goblin (6)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.623168
+      value: -8.38
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.1654754
+      value: 3.65
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -258,12 +259,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &2047571119970126956 stripped
+--- !u!4 &1440420942572281052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 3230059241508722724}
+  m_PrefabInstance: {fileID: 2541281325734594708}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3826255807733415497
+--- !u!1001 &3668082518333066738
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -273,19 +274,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (7)
+      value: Goblin (5)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.6521823
+      value: 3.89
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.4988096
+      value: 5.97
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -320,12 +321,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &405466574544890369 stripped
+--- !u!4 &170770976221649338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 3826255807733415497}
+  m_PrefabInstance: {fileID: 3668082518333066738}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &3945778149002576878
+--- !u!1001 &5294569136590810579
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -335,19 +336,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (1)
+      value: Goblin (7)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.2202678
+      value: 7.7
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.014460146
+      value: -1.39
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -382,12 +383,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &467018130070132646 stripped
+--- !u!4 &8773856782625716635 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 3945778149002576878}
+  m_PrefabInstance: {fileID: 5294569136590810579}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4724439901812468833
+--- !u!1001 &5362156248198816504
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -397,19 +398,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Goblin (4)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.4058075
+      value: 6.61
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.1364915
+      value: -4.82
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -444,12 +445,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &8154193593217972265 stripped
+--- !u!4 &8850455502715057840 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 4724439901812468833}
+  m_PrefabInstance: {fileID: 5362156248198816504}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &4918909852203011909
+--- !u!1001 &6532922122029945824
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -459,19 +460,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (9)
+      value: Goblin (3)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.40578532
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.4698215
+      value: -7.19
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -506,12 +507,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &8429169099930180365 stripped
+--- !u!4 &7642763458853832616 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 4918909852203011909}
+  m_PrefabInstance: {fileID: 6532922122029945824}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6553064063842012820
+--- !u!1001 &6551028454981423184
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -521,19 +522,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (6)
+      value: Goblin (9)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.2318964
+      value: -7.16
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.138867
+      value: -5.45
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -568,12 +569,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &7658441372216400604 stripped
+--- !u!4 &7660899468418974744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 6553064063842012820}
+  m_PrefabInstance: {fileID: 6551028454981423184}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7803385132688396875
+--- !u!1001 &7921560031323127780
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -583,19 +584,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (4)
+      value: Goblin (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.84056735
+      value: -4.8
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.3852415
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -630,12 +631,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &6697459296756008451 stripped
+--- !u!4 &6725596289901341612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 7803385132688396875}
+  m_PrefabInstance: {fileID: 7921560031323127780}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &8503953503985909213
+--- !u!1001 &8211884371221591505
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -645,19 +646,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1118534396519829376, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_Name
-      value: Enemy (5)
+      value: Goblin (8)
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.434763
+      value: 8.329206
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.035044204
+      value: 3.731133
       objectReference: {fileID: 0}
     - target: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
       propertyPath: m_LocalRotation.w
@@ -692,8 +693,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 853fe71e24c596849b8a24389f588786, type: 3}
---- !u!4 &5097241855582005653 stripped
+--- !u!4 &4706102740643602841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3510862475571713096, guid: 853fe71e24c596849b8a24389f588786, type: 3}
-  m_PrefabInstance: {fileID: 8503953503985909213}
+  m_PrefabInstance: {fileID: 8211884371221591505}
   m_PrefabAsset: {fileID: 0}

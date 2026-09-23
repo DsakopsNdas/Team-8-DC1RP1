@@ -5,33 +5,33 @@ using UnityEngine;
 public class Magnet : MonoBehaviour
 {
     //floats
-    public float magnetStrength;
+    public float magnetStrength = 15f;
 
     //transforms
-    public Transform sword;
     public Transform attachPoint;
 
     //bools
     public bool beingMagnetized;
-    private bool attached;
+    public bool attached;
 
-    private Rigidbody rb;
+    public Rigidbody rb;
 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        attachPoint = GameObject.FindGameObjectWithTag("Sword").transform;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (beingMagnetized && sword != null && !attached)
+        if (beingMagnetized && attachPoint != null && !attached)
         {
             transform.position = Vector3.MoveTowards(transform.position, attachPoint.position, magnetStrength * Time.deltaTime);
         }
 
-        if (Vector3.Distance(transform.position, sword.position) < 0.8f)
+        if (Vector3.Distance(transform.position, attachPoint.position) < 0.8f)
         {
             AttachToSword();
         }
@@ -42,9 +42,7 @@ public class Magnet : MonoBehaviour
     {
         if (other.CompareTag("Sword"))
         {
-            sword = other.transform;
             beingMagnetized = true;
-
         }
     }
     private void AttachToSword()
@@ -57,11 +55,9 @@ public class Magnet : MonoBehaviour
             rb.velocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
 
-
             rb.constraints = RigidbodyConstraints.FreezeAll;
 
-            transform.SetParent(sword);
+            transform.SetParent(attachPoint);
         }
-
     }
 }

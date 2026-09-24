@@ -43,6 +43,7 @@ public class Magnet : MonoBehaviour
         if (other.CompareTag("Sword"))
         {
             beingMagnetized = true;
+            gameObject.tag = "Sword";
         }
     }
     private void AttachToSword()

@@ -8,7 +8,7 @@ public class Sticky : MonoBehaviour
 
     public Transform sword;
 
-    private ProgressionManager progressionManager;
+  
 
     public bool attached = false; 
 
@@ -29,48 +29,9 @@ public class Sticky : MonoBehaviour
 
         if(other.CompareTag("Sword"))
         {
-            if (this.tag == "Goblin")
-            {
-                progressionManager.goblin++;
-                AttachTo(other.transform);
-                return;
-            }
-
-            if (gameObject.tag == "Orc")
-            {
-                progressionManager.orc++;
-               
-                if (progressionManager.goblin == 10)
-                {
-                    AttachTo(other.transform);
-                    return;
-                }
-                
-            }
-
-            if (gameObject.tag == "Monster")
-            {
-                progressionManager.monster++;
-                if (progressionManager.orc == 5)
-                {
-                    AttachTo(other.transform);
-                    return;
-                }
-                
-            }
-           
-            if (gameObject.tag == "Dragon")
-            {
-                progressionManager.dragon++;
-              if (progressionManager.monster == 3)
-                {
-                    AttachTo(other.transform);
-                    return;
-                }
-                
-            }
-
-
+          AttachTo(other.transform);
+           return;
+       
         }
 
         Sticky otherEnemy = other.GetComponentInParent<Sticky>();

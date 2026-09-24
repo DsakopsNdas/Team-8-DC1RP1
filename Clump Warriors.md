@@ -5,6 +5,10 @@ Clump Warriors GDD V.1 - September 19, 2026 - Jameson Phong
 
 Clump Warriors GDD V.2 - September 21, 2026 - Jameson Phong
 - Revised Gameplay
+
+Clump Warriors GDD V.3 - September 24, 2026 - Jameson Phong
+- Added in conceptualization of the Prototype in Introduction
+- Added more details to Gameplay
 ### Table of Contents
 1. Introduction
 	1. Project Vision
@@ -17,6 +21,8 @@ Clump Warriors GDD V.2 - September 21, 2026 - Jameson Phong
 ### Introduction
 Clump Warriors is a Rapid Prototype Project for NexGen Studios which began on September 10, 2026. This Game Design Document will contain Team 8's Vision & Goals for Clump Warriors and what the genre, gameplay, and controls are for the prototype The document will also have details on audio sound effects present in the game.
 
+During the conceptualization of the Prototype, our team first began with choosing what Player Motivation we wanted to focus on, and then brainstorming ideas based on the Motivation we wanted to do. The Player Motivation we had chosen is Action: Destruction, and from there we began ideating with concepts such as Overheating Weapon mechanics, and PvP Duels, until we eventually settled on a Dynasty Warrior & Katamari inspired combination of mechanics where the Player will fight through hordes of enemies, and when they defeat an enemy, their bodies will become attached to the Player's weapon.
+
 -=- *Project Vision* -=-
 The main Player Motivation Clump Warriors encompasses is Action: Destruction, featuring a unique mechanic in which every enemy slain by the Player, their bodies will be attached to their weapon.
 
@@ -27,7 +33,7 @@ The goal of Clump Warriors is to answer our objective question: How satisfying d
 Clump Warriors is a Third-Person Action-Adventure Hack-and-Slash game.
 ### Game Mechanics
 -=- *Gameplay* -=-
-Players will spawn in a procedurally generated level and will fight through hordes of enemies, collecting the bodies of slain enemies onto their weapon. ~~,collecting the bodies of slain enemies onto their weapon and surviving for as long as they can before they themself are defeated by an enemy.~~ Each level will have a large amount of enemies that the Player must fight through in order to win.
+Players will spawn in a procedurally generated level and will fight through hordes of enemies, collecting the bodies of slain enemies onto their weapon. ~~,collecting the bodies of slain enemies onto their weapon and surviving for as long as they can before they themself are defeated by an enemy.~~ Each level will have a large amount of enemies that the Player must fight through in order to win. Players will not be able to collect the bodies of bigger enemies until they have defeated the smaller enemies before them, therefore they must progressively fight through the smaller enemies and work up to the bigger ones.
 
 -=- *Controls* -=-
 Players will use the WASD Keys on a Keyboard in order to move forward, backward, left and right, and use the Left Mouse Click Button on a Mouse in order to swing their sword.

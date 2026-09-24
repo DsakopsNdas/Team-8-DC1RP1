@@ -34,6 +34,8 @@ public class PlayerMove : MonoBehaviour
     // add character controller component as variable to use its variables
     private CharacterController controller;
 
+    public AudioSource footstepSound; // Audio source for footstep sounds
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +56,19 @@ public class PlayerMove : MonoBehaviour
         // so call both functions every frame
         MouseLook();
         Movement();
+
+        // play footstep sounds when moving and grounded
+        if (controller.isGrounded && (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
+        {
+            if (!footstepSound.isPlaying)
+            {
+                footstepSound.Play();
+            }
+        }
+        else
+        {
+            footstepSound.Stop();
+        }
     }
 
     void MouseLook()

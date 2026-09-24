@@ -7,11 +7,11 @@ public class EnemyMove : MonoBehaviour
     public float enemyMoveSpeed = 5f;
     public float enemyTurnSpeed = 0.1f;
 
-    public Magnet magnetScript = null;
+    public Sticky stickyScript = null;
 
     private void Start()
     {
-        magnetScript = GetComponent<Magnet>();
+        stickyScript = GetComponent<Sticky>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class EnemyMove : MonoBehaviour
         }
         
         
-        if (targetTransform != null && magnetScript.attached == false)
+        if (targetTransform != null && stickyScript != null && stickyScript.attached == false)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, enemyMoveSpeed * Time.deltaTime);
             targetLookPos = Vector3.Lerp(transform.position, targetTransform.position, enemyTurnSpeed * Time.deltaTime);

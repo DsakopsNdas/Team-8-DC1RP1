@@ -327,6 +327,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &108540491 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4768383524292623334, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
@@ -348,6 +349,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &108540498
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -396,6 +398,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &155511564
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -444,6 +447,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &303017768
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,6 +574,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &450358519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 161681894107983895, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
@@ -591,6 +596,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &453934945
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +702,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453934945}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!20 &572792459 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6644412187034377722, guid: 777c1554d55af64429b273ec904a95b5, type: 3}
+  m_PrefabInstance: {fileID: 898255945}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &702575722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7174928189905835770, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
@@ -717,6 +728,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &702575729
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -859,6 +871,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &717531014
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1024,6 +1037,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &968807201
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1072,6 +1086,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &1106591071
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1230,6 +1245,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &1141926530
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1366,6 +1382,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &1356369122 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2129083059127278556, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
@@ -1419,6 +1436,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &1445238680
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1467,6 +1485,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &1633422769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,6 +1555,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &1760829666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3560850754982048599, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
@@ -1557,6 +1577,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &1760829673
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1605,6 +1626,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1 &1901799831
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,6 +2292,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!54 &2014680652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2318,6 +2341,7 @@ MonoBehaviour:
   sword: {fileID: 0}
   progressionManager: {fileID: 1633422770}
   attached: 0
+  cam: {fileID: 572792459}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

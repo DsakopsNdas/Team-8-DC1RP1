@@ -9,8 +9,11 @@ public class ProgressionManager : MonoBehaviour
     public int orc;
     public int monster;
     public int dragon;
-    
-    
-    
-  
+
+
+    private void Update()
+    {
+        
+    }
+
 }

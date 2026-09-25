@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Sticky : MonoBehaviour
 {
@@ -10,9 +11,9 @@ public class Sticky : MonoBehaviour
 
     public ProgressionManager progressionManager;
 
-    public bool attached = false; 
+    public bool attached = false;
 
-
+    public Camera cam;
 
     void Start()
     {
@@ -41,10 +42,10 @@ public class Sticky : MonoBehaviour
             }
             if (this.tag == "Orc")
             {
-                if (progressionManager.goblin == 10)
+                if (progressionManager.goblin >= 10)
                 {
                     progressionManager.orc += 1;
-
+                    cam.transform.position += new Vector3(0, 2000000000, 0);
                     AttachTo(other.transform);
                     return;
                 }
@@ -52,7 +53,7 @@ public class Sticky : MonoBehaviour
             if (this.tag == "Monster")
             {
 
-                if (progressionManager.orc == 5)
+                if (progressionManager.orc >= 5)
                 {
                     progressionManager.monster += 1;
 
@@ -63,7 +64,7 @@ public class Sticky : MonoBehaviour
             }
             if (this.tag == "Dragon")
             {
-                if (progressionManager.monster == 3)
+                if (progressionManager.monster >= 3)
                 {
                     progressionManager.dragon += 1;
 
@@ -90,7 +91,7 @@ public class Sticky : MonoBehaviour
             }
             if (this.tag == "Orc")
             {
-                if (progressionManager.goblin == 10)
+                if (progressionManager.goblin >= 10)
                 {
                     progressionManager.orc += 1;
                     
@@ -101,7 +102,7 @@ public class Sticky : MonoBehaviour
             if (this.tag == "Monster")
             {
                 
-                if (progressionManager.orc == 5)
+                if (progressionManager.orc >= 5)
                 {
                     progressionManager.monster += 1;
                    
@@ -112,7 +113,7 @@ public class Sticky : MonoBehaviour
             }
             if (this.tag == "Dragon")
             {
-               if (progressionManager.monster == 3)
+               if (progressionManager.monster >= 3)
                 {
                     progressionManager.dragon += 1;
 
@@ -139,5 +140,35 @@ public class Sticky : MonoBehaviour
         rb.angularVelocity = Vector3.zero;
         rb.constraints = RigidbodyConstraints.FreezeAll;
         transform.SetParent(parent, true);
+    }
+
+    private void Update()
+    {
+        CameraMovement(); 
+    }
+
+   void CameraMovement()
+    {
+        float x = 0;
+        float y = 2;
+        float z = -2;
+        
+        if (progressionManager.goblin == 10)
+        {
+            cam.transform.position += new Vector3(x, y, z);
+            progressionManager.goblin++;
+        }
+
+        if (progressionManager.orc == 5)
+        {
+            cam.transform.position += new Vector3(x, y, z);
+            progressionManager.orc++;
+        }
+
+        if (progressionManager.monster == 5)
+        {
+            cam.transform.position += new Vector3(x, y, z);
+            progressionManager.monster++;
+        }
     }
 }

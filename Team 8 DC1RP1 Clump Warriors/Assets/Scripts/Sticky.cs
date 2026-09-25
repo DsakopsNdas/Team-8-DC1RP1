@@ -8,7 +8,7 @@ public class Sticky : MonoBehaviour
 
     public Transform sword;
 
-  
+    public ProgressionManager progressionManager;
 
     public bool attached = false; 
 
@@ -16,6 +16,7 @@ public class Sticky : MonoBehaviour
 
     void Start()
     {
+       
         rb = GetComponent<Rigidbody>();
         sword = GameObject.FindGameObjectWithTag("Sword").transform;
     }
@@ -26,19 +27,101 @@ public class Sticky : MonoBehaviour
         {
             return;
         }
+        
 
-        if(other.CompareTag("Sword"))
+        if (other.CompareTag("Sword"))
         {
-          AttachTo(other.transform);
-           return;
-       
+
+            if (this.tag == "Goblin")
+            {
+                progressionManager.goblin += 1;
+                //Debug.Log(progressionManager.goblin);
+                AttachTo(other.transform);
+                return;
+            }
+            if (this.tag == "Orc")
+            {
+                if (progressionManager.goblin == 10)
+                {
+                    progressionManager.orc += 1;
+
+                    AttachTo(other.transform);
+                    return;
+                }
+            }
+            if (this.tag == "Monster")
+            {
+
+                if (progressionManager.orc == 5)
+                {
+                    progressionManager.monster += 1;
+
+                    AttachTo(other.transform);
+                    return;
+                }
+
+            }
+            if (this.tag == "Dragon")
+            {
+                if (progressionManager.monster == 3)
+                {
+                    progressionManager.dragon += 1;
+
+                    AttachTo(other.transform);
+                    return;
+                }
+
+            }
+
+
         }
 
         Sticky otherEnemy = other.GetComponentInParent<Sticky>();
 
         if (otherEnemy != null && otherEnemy.attached)
         {
-            AttachTo(otherEnemy.transform);
+
+            if (this.tag == "Goblin")
+            {
+                progressionManager.goblin += 1;
+                //Debug.Log(progressionManager.goblin);
+                AttachTo(otherEnemy.transform);
+                return;
+            }
+            if (this.tag == "Orc")
+            {
+                if (progressionManager.goblin == 10)
+                {
+                    progressionManager.orc += 1;
+                    
+                    AttachTo(otherEnemy.transform);
+                    return;
+                }
+            }
+            if (this.tag == "Monster")
+            {
+                
+                if (progressionManager.orc == 5)
+                {
+                    progressionManager.monster += 1;
+                   
+                    AttachTo(otherEnemy.transform);
+                    return;
+                }
+                
+            }
+            if (this.tag == "Dragon")
+            {
+               if (progressionManager.monster == 3)
+                {
+                    progressionManager.dragon += 1;
+
+                    AttachTo(otherEnemy.transform);
+                    return;
+                }
+                
+            }
+
         }
 
         

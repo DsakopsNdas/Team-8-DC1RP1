@@ -162,6 +162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orc Group
       objectReference: {fileID: 0}
+    - target: {fileID: 2129083059127278556, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2129444355547608205, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -274,7 +278,12 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 36
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3844803884652181223, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
+    - {fileID: 4484130014932328753, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
+    - {fileID: 2985588383132972155, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
+    - {fileID: 6734525213452020519, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
+    - {fileID: 2129444355547608205, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -316,6 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!1 &108540491 stripped
 GameObject:
@@ -336,6 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &108540498
 Rigidbody:
@@ -364,23 +375,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &108540502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108540491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &155511557 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4707211215312667323, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
@@ -400,6 +394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &155511564
 Rigidbody:
@@ -428,23 +423,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &155511568
+--- !u!1 &169590438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5300463605554887014, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+  m_PrefabInstance: {fileID: 2002854366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &169590444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155511557}
+  m_GameObject: {fileID: 169590438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
+  m_Script: {fileID: 11500000, guid: e595616b0ae387046a5462e82bbb4921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
   rb: {fileID: 0}
+  sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
+  attached: 0
 --- !u!1 &303017768
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +549,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303017768}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &375737335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6048790560574619954, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+  m_PrefabInstance: {fileID: 2002854366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &375737341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375737335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e595616b0ae387046a5462e82bbb4921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
+  attached: 0
 --- !u!1 &450358519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 161681894107983895, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
@@ -569,6 +589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!1 &453934945
 GameObject:
@@ -694,6 +715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &702575729
 Rigidbody:
@@ -722,23 +744,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &702575733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702575722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &717531014
 Rigidbody:
@@ -880,23 +886,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &717531018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717531007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &830690352 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2129083059127278556, guid: 5ad07f7c5c4fc514f9fd49b1272e403b, type: 3}
@@ -1033,6 +1022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &968807201
 Rigidbody:
@@ -1061,23 +1051,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &968807205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968807194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &1106591064 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1295017656351312326, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
@@ -1097,6 +1070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &1106591071
 Rigidbody:
@@ -1125,23 +1099,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1106591075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106591064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &1109746331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &1141926530
 Rigidbody:
@@ -1299,23 +1257,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1141926534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141926523}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1001 &1176024577
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1331,6 +1272,10 @@ PrefabInstance:
     - target: {fileID: 2129083059127278556, guid: 5ad07f7c5c4fc514f9fd49b1272e403b, type: 3}
       propertyPath: m_Name
       value: Dragon Group
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129083059127278556, guid: 5ad07f7c5c4fc514f9fd49b1272e403b, type: 3}
+      propertyPath: m_TagString
+      value: Dragon
       objectReference: {fileID: 0}
     - target: {fileID: 5331563268130064142, guid: 5ad07f7c5c4fc514f9fd49b1272e403b, type: 3}
       propertyPath: m_TagString
@@ -1380,11 +1325,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6864209982857428336, guid: 5ad07f7c5c4fc514f9fd49b1272e403b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9099401928997326842, guid: 5ad07f7c5c4fc514f9fd49b1272e403b, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6864209982857428336, guid: 5ad07f7c5c4fc514f9fd49b1272e403b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1414,6 +1364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!1 &1356369122 stripped
 GameObject:
@@ -1466,6 +1417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &1445238680
 Rigidbody:
@@ -1494,23 +1446,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1445238684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445238673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &1474421527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2165075562278384267, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
@@ -1530,6 +1465,76 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
+  attached: 0
+--- !u!1 &1633422769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633422771}
+  - component: {fileID: 1633422770}
+  m_Layer: 0
+  m_Name: GameProgression
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1633422770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633422769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 385498a21817b7e4796f0bd03ee05eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goblin: 0
+  orc: 0
+  monster: 0
+  dragon: 0
+--- !u!4 &1633422771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633422769}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.983056, y: 76.00722, z: 115.61095}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1748907601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3799399977545964247, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+  m_PrefabInstance: {fileID: 2002854366}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1748907607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748907601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e595616b0ae387046a5462e82bbb4921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!1 &1760829666 stripped
 GameObject:
@@ -1550,6 +1555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &1760829673
 Rigidbody:
@@ -1578,23 +1584,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1760829677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760829666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &1896544149 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7642823043046125015, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
@@ -1614,6 +1603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!1 &1901799831
 GameObject:
@@ -1755,6 +1745,10 @@ PrefabInstance:
     - target: {fileID: 2129083059127278556, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       propertyPath: m_Name
       value: Goblin Group
+      objectReference: {fileID: 0}
+    - target: {fileID: 2129083059127278556, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2283041124320673571, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       propertyPath: m_TagString
@@ -1962,90 +1956,60 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1295017656351312326, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1106591071}
-    - targetCorrespondingSourceObject: {fileID: 1295017656351312326, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1106591075}
     - targetCorrespondingSourceObject: {fileID: 4768383524292623334, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 108540497}
     - targetCorrespondingSourceObject: {fileID: 4768383524292623334, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 108540498}
-    - targetCorrespondingSourceObject: {fileID: 4768383524292623334, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 108540502}
     - targetCorrespondingSourceObject: {fileID: 2480477207557522614, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1445238679}
     - targetCorrespondingSourceObject: {fileID: 2480477207557522614, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1445238680}
-    - targetCorrespondingSourceObject: {fileID: 2480477207557522614, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1445238684}
     - targetCorrespondingSourceObject: {fileID: 4173433206334484439, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1141926529}
     - targetCorrespondingSourceObject: {fileID: 4173433206334484439, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1141926530}
-    - targetCorrespondingSourceObject: {fileID: 4173433206334484439, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1141926534}
     - targetCorrespondingSourceObject: {fileID: 4557546932671918920, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 968807200}
     - targetCorrespondingSourceObject: {fileID: 4557546932671918920, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 968807201}
-    - targetCorrespondingSourceObject: {fileID: 4557546932671918920, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 968807205}
     - targetCorrespondingSourceObject: {fileID: 7174928189905835770, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 702575728}
     - targetCorrespondingSourceObject: {fileID: 7174928189905835770, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 702575729}
-    - targetCorrespondingSourceObject: {fileID: 7174928189905835770, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 702575733}
     - targetCorrespondingSourceObject: {fileID: 3560850754982048599, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1760829672}
     - targetCorrespondingSourceObject: {fileID: 3560850754982048599, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1760829673}
-    - targetCorrespondingSourceObject: {fileID: 3560850754982048599, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1760829677}
     - targetCorrespondingSourceObject: {fileID: 2283041124320673571, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2014680651}
     - targetCorrespondingSourceObject: {fileID: 2283041124320673571, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2014680652}
-    - targetCorrespondingSourceObject: {fileID: 2283041124320673571, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2014680656}
     - targetCorrespondingSourceObject: {fileID: 4707211215312667323, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 155511563}
     - targetCorrespondingSourceObject: {fileID: 4707211215312667323, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 155511564}
-    - targetCorrespondingSourceObject: {fileID: 4707211215312667323, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 155511568}
     - targetCorrespondingSourceObject: {fileID: 2904180367640635457, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 717531013}
     - targetCorrespondingSourceObject: {fileID: 2904180367640635457, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 717531014}
-    - targetCorrespondingSourceObject: {fileID: 2904180367640635457, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 717531018}
   m_SourcePrefab: {fileID: 100100000, guid: 4ef08f72a3dc4b84298020547b24a92f, type: 3}
 --- !u!1 &1996270630
 GameObject:
@@ -2166,7 +2130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1071336366492482907, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2107108369533611045, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_Constraints
@@ -2176,13 +2140,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster Group
       objectReference: {fileID: 0}
+    - target: {fileID: 2129083059127278556, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2666399916118126121, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3799399977545964247, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 4388061486056065852, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_Enabled
@@ -2202,11 +2170,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5300463605554887014, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 6048790560574619954, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Monster
       objectReference: {fileID: 0}
     - target: {fileID: 6231484100422237990, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2254,20 +2222,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7608152544857401022, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8352786467147276010, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8824314411096602560, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
       propertyPath: m_Constraints
       value: 36
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8352786467147276010, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+    - {fileID: 1071336366492482907, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+    - {fileID: 7608152544857401022, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6048790560574619954, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 375737341}
+    - targetCorrespondingSourceObject: {fileID: 3799399977545964247, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 1748907607}
+    - targetCorrespondingSourceObject: {fileID: 5300463605554887014, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 169590444}
   m_SourcePrefab: {fileID: 100100000, guid: 2e5b40f84cacd6240964488daa3e3e10, type: 3}
 --- !u!1 &2014680645 stripped
 GameObject:
@@ -2288,6 +2268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!54 &2014680652
 Rigidbody:
@@ -2316,23 +2297,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2014680656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2014680645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13ae41ec61262064c9671a9fb17c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnetStrength: 15
-  attachPoint: {fileID: 0}
-  beingMagnetized: 0
-  attached: 0
-  rb: {fileID: 0}
 --- !u!1 &2041959498 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3091820425483072125, guid: 9b977541ef0077848984ef14bedc16aa, type: 3}
@@ -2352,6 +2316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   sword: {fileID: 0}
+  progressionManager: {fileID: 1633422770}
   attached: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2364,3 +2329,4 @@ SceneRoots:
   - {fileID: 1176024577}
   - {fileID: 24821404}
   - {fileID: 2002854366}
+  - {fileID: 1633422771}

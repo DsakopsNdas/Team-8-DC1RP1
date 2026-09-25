@@ -26,7 +26,7 @@ public class EnemyMove : MonoBehaviour
         }
 
 
-        if (targetTransform != null && magnetScript != null && magnetScript.attached == false)
+        if (targetTransform != null && magnetScript == null)
         {
             transform.position = Vector3.MoveTowards(transform.position, targetTransform.position, enemyMoveSpeed * Time.deltaTime);
             targetLookPos = Vector3.Lerp(transform.position, targetTransform.position, enemyTurnSpeed * Time.deltaTime);

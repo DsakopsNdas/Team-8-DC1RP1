@@ -28,7 +28,11 @@ public class Magnet : MonoBehaviour
     {
         if (beingMagnetized && attachPoint != null && !attached)
         {
-            transform.position = Vector3.MoveTowards(transform.position, attachPoint.position, magnetStrength * Time.deltaTime);
+            if (Input.GetMouseButton(0))
+            {
+                transform.position = Vector3.MoveTowards(transform.position, attachPoint.position, magnetStrength * Time.deltaTime);
+            }
+           
         }
 
         if (Vector3.Distance(transform.position, attachPoint.position) < 0.8f)

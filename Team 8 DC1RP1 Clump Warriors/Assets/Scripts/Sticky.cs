@@ -15,6 +15,9 @@ public class Sticky : MonoBehaviour
 
     public Camera cam;
 
+    public AudioSource plopSFX; // Audio source for plop sound effect when enemy is attached to sword
+    public AudioSource enemyDeath; // Audio source for enemy death sound effect
+
     void Start()
     {
        
@@ -38,6 +41,8 @@ public class Sticky : MonoBehaviour
                 progressionManager.goblin += 1;
                 //Debug.Log(progressionManager.goblin);
                 AttachTo(other.transform);
+                plopSFX.Play();
+                enemyDeath.Play();
                 return;
             }
             if (this.tag == "Orc")
@@ -47,6 +52,8 @@ public class Sticky : MonoBehaviour
                     progressionManager.orc += 1;
                     cam.transform.position += new Vector3(0, 2000000000, 0);
                     AttachTo(other.transform);
+                    plopSFX.Play();
+                    enemyDeath.Play();
                     return;
                 }
             }
@@ -58,6 +65,8 @@ public class Sticky : MonoBehaviour
                     progressionManager.monster += 1;
 
                     AttachTo(other.transform);
+                    plopSFX.Play();
+                    enemyDeath.Play();
                     return;
                 }
 
@@ -69,6 +78,8 @@ public class Sticky : MonoBehaviour
                     progressionManager.dragon += 1;
 
                     AttachTo(other.transform);
+                    plopSFX.Play();
+                    enemyDeath.Play();
                     return;
                 }
 
@@ -87,6 +98,8 @@ public class Sticky : MonoBehaviour
                 progressionManager.goblin += 1;
                 //Debug.Log(progressionManager.goblin);
                 AttachTo(otherEnemy.transform);
+                plopSFX.Play();
+                enemyDeath.Play();
                 return;
             }
             if (this.tag == "Orc")
@@ -96,6 +109,8 @@ public class Sticky : MonoBehaviour
                     progressionManager.orc += 1;
                     
                     AttachTo(otherEnemy.transform);
+                    plopSFX.Play();
+                    enemyDeath.Play();
                     return;
                 }
             }
@@ -107,6 +122,8 @@ public class Sticky : MonoBehaviour
                     progressionManager.monster += 1;
                    
                     AttachTo(otherEnemy.transform);
+                    plopSFX.Play();
+                    enemyDeath.Play();
                     return;
                 }
                 
@@ -118,6 +135,8 @@ public class Sticky : MonoBehaviour
                     progressionManager.dragon += 1;
 
                     AttachTo(otherEnemy.transform);
+                    plopSFX.Play();
+                    enemyDeath.Play();
                     return;
                 }
                 

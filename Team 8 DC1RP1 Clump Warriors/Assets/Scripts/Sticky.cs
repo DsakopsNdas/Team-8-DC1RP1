@@ -20,14 +20,15 @@ public class Sticky : MonoBehaviour
 
     void Start()
     {
-       
+
         rb = GetComponent<Rigidbody>();
         sword = GameObject.FindGameObjectWithTag("Sword").transform;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(attached)
+        // If attached is false and mouse input is true, enemy can attach
+        if (attached || !Input.GetMouseButton(0))
         {
             return;
         }

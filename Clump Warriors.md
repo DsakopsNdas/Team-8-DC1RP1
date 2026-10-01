@@ -31,10 +31,10 @@ During the conceptualization of the Prototype, our team first began with choosin
 
 The design rationale & experience we envisioned with this is that Players would feel a satisfaction of building up a pile of bodies onto their sword as they slowly go from cutting away their enemies to bludgeoning them. It's innovative in that normally dead enemies would disappear, but in this case instead of Clump Warriors' dead enemies disappearing, they are collected onto the Player's weapon.
 
-![Uploading image.png…]()
+<img width="800" height="658" alt="Pasted image 20261001143617" src="https://github.com/user-attachments/assets/c44aa1b9-ff7e-4b07-8692-2059240bbffc" />
 Concept of the Body Collecting Mechanic drawn by Daniel Nguyen
 
-![Uploading image.png…]()
+<img width="1691" height="930" alt="Pasted image 20261001143853" src="https://github.com/user-attachments/assets/01d28b50-8c81-4e63-b8cd-06d385939fe8" />
 Screen Capture of the Prototype taken by Jameson Phong
 
 -=- *Project Vision* -=-

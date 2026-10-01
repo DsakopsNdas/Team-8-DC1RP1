@@ -12,6 +12,7 @@ Clump Warriors GDD V.3 - September 24, 2026 - Jameson Phong
 
 Clump Warriors GDD V.4 - October 1, 2026 - Jameson Phong
 - Added a Design Rationale paragraph to Introduction
+- - Added images in Introduction
 - Added a Reference section
 ### Table of Contents
 1. Introduction
@@ -30,10 +31,10 @@ During the conceptualization of the Prototype, our team first began with choosin
 
 The design rationale & experience we envisioned with this is that Players would feel a satisfaction of building up a pile of bodies onto their sword as they slowly go from cutting away their enemies to bludgeoning them. It's innovative in that normally dead enemies would disappear, but in this case instead of Clump Warriors' dead enemies disappearing, they are collected onto the Player's weapon.
 
-![[Pasted image 20261001143617.png]]
+![Uploading image.png…]()
 Concept of the Body Collecting Mechanic drawn by Daniel Nguyen
 
-![[Pasted image 20261001143853.png]]
+![Uploading image.png…]()
 Screen Capture of the Prototype taken by Jameson Phong
 
 -=- *Project Vision* -=-

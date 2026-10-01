@@ -9,6 +9,10 @@ Clump Warriors GDD V.2 - September 21, 2026 - Jameson Phong
 Clump Warriors GDD V.3 - September 24, 2026 - Jameson Phong
 - Added in conceptualization of the Prototype in Introduction
 - Added more details to Gameplay
+
+Clump Warriors GDD V.4 - October 1, 2026 - Jameson Phong
+- Added a Design Rationale paragraph to Introduction
+- Added a Reference section
 ### Table of Contents
 1. Introduction
 	1. Project Vision
@@ -18,10 +22,19 @@ Clump Warriors GDD V.3 - September 24, 2026 - Jameson Phong
 	1. Gameplay
 	2. Controls
 3. Audio
+4. References
 ### Introduction
 Clump Warriors is a Rapid Prototype Project for NexGen Studios which began on September 10, 2026. This Game Design Document will contain Team 8's Vision & Goals for Clump Warriors and what the genre, gameplay, and controls are for the prototype The document will also have details on audio sound effects present in the game.
 
 During the conceptualization of the Prototype, our team first began with choosing what Player Motivation we wanted to focus on, and then brainstorming ideas based on the Motivation we wanted to do. The Player Motivation we had chosen is Action: Destruction, and from there we began ideating with concepts such as Overheating Weapon mechanics, and PvP Duels, until we eventually settled on a Dynasty Warrior & Katamari inspired combination of mechanics where the Player will fight through hordes of enemies, and when they defeat an enemy, their bodies will become attached to the Player's weapon.
+
+The design rationale & experience we envisioned with this is that Players would feel a satisfaction of building up a pile of bodies onto their sword as they slowly go from cutting away their enemies to bludgeoning them. It's innovative in that normally dead enemies would disappear, but in this case instead of Clump Warriors' dead enemies disappearing, they are collected onto the Player's weapon.
+
+![[Pasted image 20261001143617.png]]
+Concept of the Body Collecting Mechanic drawn by Daniel Nguyen
+
+![[Pasted image 20261001143853.png]]
+Screen Capture of the Prototype taken by Jameson Phong
 
 -=- *Project Vision* -=-
 The main Player Motivation Clump Warriors encompasses is Action: Destruction, featuring a unique mechanic in which every enemy slain by the Player, their bodies will be attached to their weapon.
@@ -40,3 +53,5 @@ Players will use the WASD Keys on a Keyboard in order to move forward, backward,
 ### Audio
 -=- *Sound Effects* -=-
 Sound effects included in the game will feature Player Footsteps, sound effects for swinging your sword, hitting an enemy, collecting an enemy's body onto your weapon, and spawn and death sound effects for enemies.
+# References
+- Unity 3D Take-Home Assignment starter scripts from Application of Game Engines Module 2, made by Mark Shannelly
